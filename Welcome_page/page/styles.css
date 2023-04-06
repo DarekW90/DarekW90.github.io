@@ -1,0 +1,101 @@
+:root {
+    --blue: #49bef0;
+    --dark: #1b1b1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    background: linear-gradient(to right top, var(--dark), var(--blue))
+}
+
+.container {
+    width: 66%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0,0.25));
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+.bg__img{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+}
+/*
+.bg__img--python {
+    top: 0;
+    right: 60%;
+    /*animation: slideDown 5s linear infinite;
+}
+*/
+
+.bg__img--python {
+    left: 84%;
+    top: 18%;
+    right: 60%;
+    /*animation: slideRight 5s linear;*/
+}
+
+.bg__img--cSharp {
+    left: 84%;
+    top: 27%;
+    right: 60%;
+    /*animation: slideRight 5s linear;*/
+}
+
+.bg__img--gitHub {
+    left: 84%;
+    top: 35%;
+    right: 60%;
+    /*animation: slideRight 5s linear;*/
+}
+
+.bg__img--powerShell {
+    height: auto;
+    left: 84%;
+    top: 63%;
+    right: 60%;
+    /*animation: slideRight 5s linear;*/
+}
+.bg__img--commandPrompt {
+    height: auto;
+    left: 84%;
+    top: 70%;
+    right: 60%;
+    /*animation: slideRight 5s linear;*/
+}
+.bg__img--gitBash {
+    left: 84%;
+    top: 75%;
+    right: 60%;
+    /*animation: slideRight 5s linear;*/
+}
+
+
+
+@keyframes slideDown {
+    from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh);}
+}
+
+@keyframes slideRight {
+    from {transform: translateX(-200vh)}
+    to {transform: translateX(0vh)}
+    
+}
+
