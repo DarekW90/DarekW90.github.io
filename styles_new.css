@@ -17,7 +17,9 @@ body {
     align-items: center;
     background: var(--blue);
     background: linear-gradient(to left, var(--blue), var(--dark));
-    color: #fff
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -32,6 +34,9 @@ body {
     -webkit-backdrop-filter: blur(8px);
     overflow: hidden;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .bg__img{
@@ -42,7 +47,19 @@ body {
     display: flex;
     flex-direction: column;
     animation: slideLeft 5s linear;
+}
 
+h1 {
+    font-size: 48px;
+    padding-bottom: 20px;
+    
+}
+p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+a {
+    padding: 40px;
 }
 
 @keyframes slideDown {
@@ -55,4 +72,6 @@ body {
     to {transform: translateX(0vh)}
     
 }
+
+
 
