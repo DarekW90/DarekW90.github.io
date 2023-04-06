@@ -1,6 +1,58 @@
-body {
-    background-color: #b3fff7;
+:root {
+    --blue: #1883d5;
+    --dark: #1b1b1b;
 }
-.center {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--blue);
+    background: linear-gradient(to left, var(--blue), var(--dark));
+    color: #fff
+}
+
+.container {
+    width: 66%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to left top, rgba(0,0,0,0.75), rgba(0,0,0,0.25));
+    padding: 32px 92px;
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: hidden;
     text-align: center;
 }
+
+.bg__img{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: slideLeft 5s linear;
+
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh);}
+}
+
+@keyframes slideLeft {
+    from {transform: translateX(200vh)}
+    to {transform: translateX(0vh)}
+    
+}
+
