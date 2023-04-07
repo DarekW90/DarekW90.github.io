@@ -20,11 +20,14 @@ body {
     cursor: pointer;
 }
 
-.right_side_menu {
+.right_side_menu ul {
+    flex: auto;
+    list-style-type: none;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 38vh;
-    margin-left: 5vh;
+    margin-top: 16%;
+    margin-left: 3%;
     color: #fff;
+    
 }
 
 .logo img {
@@ -57,10 +60,11 @@ body {
 
 /*pozycjonowanie tekstu*/
 .banner {
+    flex: auto;
     width: 80%;
     height: 70%;
-    top: 25%;
-    left: 130px;
+    top: 15%;
+    left: 11%;
     position: absolute;
     color: #fff;
 }
@@ -88,12 +92,13 @@ body {
 .app-picture {
     flex: auto;
     width: 33%;
+    height: 33%;
     float: right;
 }
 
 .app-picture img {
     width: 100%;
     margin-top: -20px;
-    padding: 50px;
+    padding: 12%;
 }
 
