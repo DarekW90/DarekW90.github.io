@@ -29,7 +29,7 @@ body {
     background: linear-gradient(to left top, rgba(0,0,0,0.75), rgba(0,0,0,0.25));
     padding: 32px 92px;
     border-radius: 20px;
-    position: relative;
+    position: absolute;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     overflow: hidden;
@@ -40,13 +40,20 @@ body {
 }
 
 .bg__img{
-    width: 75px;
-    height: 75px;
-    margin-bottom: 10px;
+    position: absolute;
+    /*margin-bottom: 10px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
-    animation: slideLeft 5s linear;
+    animation: slideLeft 5s linear;*/
+}
+
+.bg__img--logo {
+    width: 200px;
+    height: 200px;
+    top: 5%;
+    left: 70%;
+    /*height: 75%;*/
 }
 
 h1 {
