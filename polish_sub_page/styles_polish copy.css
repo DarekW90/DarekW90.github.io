@@ -83,7 +83,7 @@ body {
     
 }
 .right_box {
-    margin-left: 10vw;
+    
     width: 40%;
     /*border: #111 solid;*/
     color: white;
@@ -134,9 +134,12 @@ body {
 
 
 @media (orientation: portrait) {
+    * {
+        font-size: 3vw; /* nowy rozmiar czcionki dla ekranów pionowych */
+      }
+
     body {
         flex-direction: column;
-        justify-content: flex-start;
     }
 
     .main_box {
@@ -144,7 +147,9 @@ body {
     }
 
     .main_box ul {
-        flex-direction: column;
+        margin-top: -5vh;
+        margin-right: 15vh;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -153,15 +158,19 @@ body {
         font-size: 5vw;
     }
 
+    .github-btn img {
+        margin-top: 4vh;
+    }
+
     .container2 {
         flex-direction: column-reverse;
-        margin-top: 5vh;
+        margin-top: 1vh;
+        text-align: center;
     }
 
     .right_box {
         width: 100%;
         margin-left: 0;
-        text-align: center;
     }
 
     .icons img {

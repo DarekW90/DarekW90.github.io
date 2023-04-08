@@ -5,24 +5,29 @@
     --pink: #fd00da;
     --light_blue: #19d7f8;
     --light_gray: #ecebeb4a;
+    
 }
 * {
-    margin: 10;
-    /*padding: 0;
+    font-size: 1vw;
+    /*margin: 0;
+    padding: 0;
     /*font-family: sans-serif;*/
 }
 
 body {
     background: linear-gradient(to bottom left, var(--main), var(--dark));
-    height: 100vh;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main_box{
+    width: 100%;
+    height: 9vh;
     color: black;
-    border: #111 solid;
+    /*border: #111 solid;*/
 }
 
 .main_box ul {
@@ -32,14 +37,14 @@ body {
 }
 
 .main_box ul li {
-    font-size: 150%;
+    
     list-style-type: none;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
     cursor: pointer;
 }
 
-.abt_me {
+.abt_me, .contact {
     color: #fff;
     text-decoration: none;
     border: 2px solid transparent;
@@ -49,94 +54,134 @@ body {
     background-clip: content-box, border-box;
 }
 
-.abt_me span {
+.abt_me span, .contact span {
     padding: 8px 22px;
 }
 
+.contact {
+    background-image: linear-gradient(to right bottom, var(--main), var(--dark)), radial-gradient(circle at top left, var(--light_blue), var(--pink));
+}
+
 .github-btn img{
-    margin-top: -25%;
-    height: 50px;
-    width: 50px;
+    margin-top: -20%;
+    height: 10vh;
+    width: 5vw;
     background-image: linear-gradient(to bottom, var(--main), var(--light_gray));
     border-radius: 50px;
 }
 
-.contact {
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(to right bottom, var(--main), var(--dark)), radial-gradient(circle at top left, var(--light_blue), var(--pink));
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+.github-btn img p {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
 }
 
-.contact span {
-    padding: 8px 22px;
-}
-
-.right_box {
-    /*position: flex;*/
-    float: left;
-    margin-top: 0%;
-    margin-left: 0;
-    margin-right: 5px;
-    height: 75%;
-    width: 25%;
-    border: #111 solid;
-}
-.right_box h1 {
-    color: rgb(105, 137, 233);
-    text-align: center;
-}
-
-.center_box {
+/* NIE RUSZCAĆ */
+.container2 {
     display: flex;
-    width: 20%;
-    border: #111 solid;
+    margin-top: 1vh;
+    
 }
+.right_box {
+    margin-left: 10vw;
+    width: 40%;
+    /*border: #111 solid;*/
+    color: white;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.center_box p {
-    color:#fff
+.icons img{
+    height: 3vw;
+    width: 3vw;
+    margin: 0;
 }
 
 .big_window {
+    margin-left: 1%;
     display: flex;
-    border: #000 solid;
+    justify-content: center;
+    align-items: center;
+    /*border: #000 solid;*/
+}
+
+.big_window img {
+    border: black solid;
+    margin: 0vw 10vw 0vw 0vw;
+    max-width: 100%;
+    height: auto;
+    max-height: 70%;
+    
 }
 
 .return {
     position: fixed;
     bottom: 0;
     width: 100%;
-    border: #111 solid;
+    /*border: #111 solid;*/
     text-align: center;
     
 }
 
 .return a {
     color: rgba(255, 255, 255, 0.773);
-    font-size: 125%;
     text-decoration: none;
 }
 
-.icons img{
-    height: 50px;
-    width: 50px;
-}
 
-#hover_text[title]::before {
-    content: attr(title);
-    padding: 5px 10px;
-    color: #fff;
-    background-color: #000;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-    display: none;
-    cursor: pointer;
-  }
-  
-  #hover_text[title]:hover::before {
-    display: block;
-  }
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main_box {
+        height: 12vh;
+    }
+
+    .main_box ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_box ul li {
+        margin-bottom: 5vh;
+        font-size: 5vw;
+    }
+
+    .container2 {
+        flex-direction: column-reverse;
+        margin-top: 5vh;
+    }
+
+    .right_box {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .icons img {
+        height: 10vw;
+        width: 10vw;
+        margin: 5vw;
+    }
+
+    .big_window {
+        margin: 5vh 0;
+    }
+
+    .big_window img {
+        margin: 0;
+        max-width: 80vw;
+        max-height: 50vh;
+    }
+
+    .return {
+        position: relative;
+        margin-top: 5vh;
+    }
+}
