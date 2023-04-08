@@ -13,20 +13,18 @@
 }
 
 body {
-    background:#4d425a;
-    width: 100vw;
-    height: 100vh;
-    max-height: 1000vh;
-    display: flex;
     background: linear-gradient(to bottom left, var(--main), var(--dark));
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+    overflow: hidden;
 }
 
 .main_box{
+    width: 99vw;
+    height: 9vh;
     color: black;
-    height: 10%;
-    width: 100%;
-    max-width: 100%;
-    border: #111 solid;
+    /*border: #111 solid;*/
 }
 
 .main_box ul {
@@ -53,17 +51,8 @@ body {
     background-clip: content-box, border-box;
 }
 
-
 .abt_me span {
     padding: 8px 22px;
-}
-
-.github-btn img{
-    margin-top: -25%;
-    height: 50px;
-    width: 50px;
-    background-image: linear-gradient(to bottom, var(--main), var(--light_gray));
-    border-radius: 50px;
 }
 
 .contact {
@@ -80,14 +69,74 @@ body {
     padding: 8px 22px;
 }
 
-.right_box {
-    position: absolute;
-    margin-top: 100px;
-    color: black;
-    height: auto;
-    width: 25%;
-    border: #111 solid;
+
+.github-btn img{
+    margin-top: -20%;
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(to bottom, var(--main), var(--light_gray));
+    border-radius: 50px;
 }
-.right_box h1 {
-    color: rgb(42, 92, 240);
+
+.github-btn img p {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* NIE RUSZCAĆ */
+.container2 {
+    display: flex;
+    margin-top: 1vh;
+    
+}
+.right_box {
+    margin-left: 100px;
+    height: 80%;
+    width: 25%;
+    /*border: #111 solid;*/
+    color: white;
+    font-size: 125%;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.icons img{
+    height: 15%;
+    width: 15%;
+    display: inline-block;
+    max-width: 25%;
+    margin: 2px;
+}
+
+.big_window {
+    margin-left: 1vh;
+    /*border: #000 solid;*/
+    height: 78vh;
+    width: 73vw;
+    display: flex;
+    justify-content: center;
+}
+
+.big_window img {
+    border: black solid;
+}
+
+.return {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*border: #111 solid;*/
+    text-align: center;
+    
+}
+
+.return a {
+    color: rgba(255, 255, 255, 0.773);
+    font-size: 125%;
+    text-decoration: none;
 }
