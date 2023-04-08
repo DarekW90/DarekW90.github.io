@@ -131,3 +131,57 @@ body {
     color: rgba(255, 255, 255, 0.773);
     text-decoration: none;
 }
+
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main_box {
+        height: 12vh;
+    }
+
+    .main_box ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_box ul li {
+        margin-bottom: 5vh;
+        font-size: 5vw;
+    }
+
+    .container2 {
+        flex-direction: column-reverse;
+        margin-top: 5vh;
+    }
+
+    .right_box {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .icons img {
+        height: 10vw;
+        width: 10vw;
+        margin: 5vw;
+    }
+
+    .big_window {
+        margin: 5vh 0;
+    }
+
+    .big_window img {
+        margin: 0;
+        max-width: 80vw;
+        max-height: 50vh;
+    }
+
+    .return {
+        position: relative;
+        margin-top: 5vh;
+    }
+}
