@@ -1,0 +1,101 @@
+:root {
+    --main: #4d425a;
+    --dark: #1b1b1b;
+    --dark_green: #e0631b;
+    --pink: #fd00da;
+    --light_blue: #19d7f8;
+    --light_gray: #ecebeb4a;
+}
+* {
+    /*margin: 0;
+    padding: 0;
+    /*font-family: sans-serif;*/
+}
+
+body {
+    
+    background:#4d425a;
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    background: linear-gradient(to bottom left, var(--main), var(--dark));
+    overflow: hidden;
+}
+
+.main_box{
+    color: black;
+    width: 100%;
+    max-width: 100%;
+    border: #111 solid;
+}
+
+.main_box ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.main_box ul li {
+    font-size: 150%;
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.abt_me {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(to left bottom, var(--dark), var(--main)), radial-gradient(circle at top left, var(--pink), var(--light_blue));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.abt_me span {
+    padding: 8px 22px;
+}
+
+.github-btn img{
+    margin-top: -25%;
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(to bottom, var(--main), var(--light_gray));
+    border-radius: 50px;
+}
+
+.contact {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(to right bottom, var(--main), var(--dark)), radial-gradient(circle at top left, var(--light_blue), var(--pink));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.contact span {
+    padding: 8px 22px;
+}
+
+.right_box {
+    /*position: flex;*/
+    float: left;
+    margin-top: 0%;
+    margin-left: 0;
+    height: auto;
+    width: 25%;
+    border: #111 solid;
+}
+.right_box h1 {
+    color: rgb(105, 137, 233);
+    text-align: center;
+}
+
+.slider_box {
+    height: 50%;
+    width: 50%;
+    border: #111 solid;
+}
