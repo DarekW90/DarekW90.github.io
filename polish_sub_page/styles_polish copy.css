@@ -5,8 +5,10 @@
     --pink: #fd00da;
     --light_blue: #19d7f8;
     --light_gray: #ecebeb4a;
+    
 }
 * {
+    font-size: 3vh;
     /*margin: 0;
     padding: 0;
     /*font-family: sans-serif;*/
@@ -34,14 +36,14 @@ body {
 }
 
 .main_box ul li {
-    font-size: 3vh;
+    
     list-style-type: none;
     font-family: 'Times New Roman', Times, serif;
     white-space: nowrap;
     cursor: pointer;
 }
 
-.abt_me {
+.abt_me, .contact {
     color: #fff;
     text-decoration: none;
     border: 2px solid transparent;
@@ -51,24 +53,13 @@ body {
     background-clip: content-box, border-box;
 }
 
-.abt_me span {
+.abt_me span, .contact span {
     padding: 8px 22px;
 }
 
 .contact {
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 20px;
     background-image: linear-gradient(to right bottom, var(--main), var(--dark)), radial-gradient(circle at top left, var(--light_blue), var(--pink));
-    background-origin: border-box;
-    background-clip: content-box, border-box;
 }
-
-.contact span {
-    padding: 8px 22px;
-}
-
 
 .github-btn img{
     margin-top: -20%;
@@ -91,12 +82,10 @@ body {
     
 }
 .right_box {
-    margin-left: 100px;
-    height: 80%;
-    width: 25%;
+    margin-left: 10vw;
+    width: 40%;
     /*border: #111 solid;*/
     color: white;
-    font-size: 2vh;
 }
 .icons {
     display: flex;
@@ -106,30 +95,25 @@ body {
   }
 
 .icons img{
-    height: 15%;
-    width: 15%;
-    display: inline-block;
-    
-    margin: 2px;
+    height: 3vw;
+    width: 3vw;
+    margin: 0;
 }
 
 .big_window {
-    margin-left: 1vh;
+    margin-left: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
     /*border: #000 solid;*/
-    
-    
-    
 }
 
 .big_window img {
     border: black solid;
-    margin-left: 20vh;
-    width: 40vw;
-    max-width: 100%;
-    max-height: 100%;
+    margin: 0vh 30vh 0vh 0vh;
+    max-width: 75%;
+    height: 80%;
+    
 }
 
 .return {
@@ -143,6 +127,5 @@ body {
 
 .return a {
     color: rgba(255, 255, 255, 0.773);
-    font-size: 125%;
     text-decoration: none;
 }
