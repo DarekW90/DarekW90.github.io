@@ -135,11 +135,13 @@ body {
 
 @media (orientation: portrait) {
     * {
+        
         font-size: 3vw; /* nowy rozmiar czcionki dla ekranów pionowych */
       }
     
     body {
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .main_box {
