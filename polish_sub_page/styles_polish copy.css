@@ -84,7 +84,7 @@ body {
 }
 .right_box {
     
-    width: 40%;
+    width: 50%;
     /*border: #111 solid;*/
     color: white;
 }
@@ -137,50 +137,59 @@ body {
     * {
         font-size: 3vw; /* nowy rozmiar czcionki dla ekranów pionowych */
       }
-
+    
     body {
         flex-direction: column;
     }
 
     .main_box {
         height: 12vh;
+        
     }
 
     .main_box ul {
-        margin-top: -5vh;
-        margin-right: 15vh;
-        justify-content: space-around;
-        align-items: center;
+        display: flex; /* ustawia kontener na flexbox */
+        justify-content: center; /* wyśrodkowuje elementy wzdłuż osi X */
+        height: 100vh; /* ustawia wysokość kontenera na całą wysokość ekranu */
+        margin: 0; /* usuwa marginesy */
+        padding: 0; /* usuwa wcięcia */
     }
 
     .main_box ul li {
-        margin-bottom: 5vh;
+        margin-top: 3vh;
+        margin-left: 5vh;
         font-size: 5vw;
     }
 
     .github-btn img {
-        margin-top: 4vh;
+        width: 7vh;
+        height: 7vh;
     }
 
     .container2 {
         flex-direction: column-reverse;
-        margin-top: 1vh;
-        text-align: center;
+        margin-top: -4vh;
+        
     }
 
     .right_box {
-        width: 100%;
-        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        /* text-align: center; */
+        margin: 0 auto;
     }
-
+    
     .icons img {
         height: 10vw;
         width: 10vw;
-        margin: 5vw;
     }
-
+    
     .big_window {
-        margin: 5vh 0;
+        display: flex; /* ustawia kontener na flexbox */
+        justify-content: center; /* wyśrodkowuje elementy wzdłuż osi X */
+        margin-top: 5vh;
     }
 
     .big_window img {
