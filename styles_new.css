@@ -36,14 +36,23 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    
 }
 
+
 .container a {
-    /* border: #1b1b1b solid; */
     display: inline-block;
+}
+
+.roadmap {
+    margin-top: 10vh;
+}
+
+.roadmap a {
     
+    text-decoration: none;
+    background: linear-gradient(to right, #ff00ff, #0080ff);
+    -webkit-background-clip: text; /* dla przeglądarek opartych na silniku WebKit */
+    color: transparent;
 }
 
 @media (orientation: portrait) {

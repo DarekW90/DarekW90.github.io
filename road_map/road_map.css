@@ -1,0 +1,104 @@
+:root {
+    --py_yellow: rgb(255, 200, 0);
+    --py_blue: rgb(0, 60, 255);
+    --py_dark: #1b1b1b;
+ }
+ 
+ *{
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    /* display: flex; */
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(to top left, var(--py_blue), var(--py_yellow));
+    background-attachment: fixed;
+    /* border: black solid 10px; */
+}
+
+.logo_python {
+    width: 100vw;
+    /* border: black solid 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_python img{
+    /* border: black solid 10px; */
+    height: 60vh;
+    width: auto;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.text {
+    margin-top: 2vh;
+    width: 60%;
+    height: auto;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 7vh;
+    text-decoration: none;
+    background: linear-gradient(to right bottom, var(--py_dark), var(--py_blue));
+    -webkit-background-clip: text; /* dla przeglądarek opartych na silniku WebKit */
+    color: transparent;
+}
+.text h3 {
+    font-size: 3vh;
+    text-decoration: none;
+    color: var(--py_dark)
+}
+
+
+
+@media (orientation: portrait) {
+
+    
+    .container {
+        position: relative;
+    }
+
+    .logo_python {
+        /* border: black solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+    }
+
+    .logo_python img {
+        /* border: black solid 10px; */
+        position: fixed;
+        display: flex;
+        filter: blur(3px);
+        width: 100vw;
+        height: auto;
+    }
+
+    .text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+        margin-top: 80vh;
+    }
+}
