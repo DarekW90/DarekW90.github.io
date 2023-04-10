@@ -37,48 +37,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-}
-
-.bg__img{
-    position: absolute;
-    /*margin-bottom: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    animation: slideLeft 5s linear;*/
-}
-
-.bg__img--logo {
-    width: 200px;
-    height: 200px;
-    top: 5%;
-    left: 70%;
-    /*height: 75%;*/
-}
-
-h1 {
-    font-size: 48px;
-    padding-bottom: 20px;
-    
-}
-p {
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-a {
-    padding: 40px;
-}
-
-@keyframes slideDown {
-    from {transform: translateY(-30vh)}
-    to {transform: translateY(100vh);}
-}
-
-@keyframes slideLeft {
-    from {transform: translateX(200vh)}
-    to {transform: translateX(0vh)}
     
 }
 
+.container a {
+    /* border: #1b1b1b solid; */
+    display: inline-block;
+    
+}
+
+@media (orientation: portrait) {
+    
+    .container {
+    width: 90%;
+    height: 60%;
+    padding: 20px;
+    }
 
 
+}
