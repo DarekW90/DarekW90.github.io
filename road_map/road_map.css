@@ -13,6 +13,7 @@ body {
     /* display: flex; */
     width: 100vw;
     height: auto;
+    overflow-x: hidden;
     background: linear-gradient(to top left, var(--py_blue), var(--py_yellow));
     background-attachment: fixed;
     /* border: black solid 10px; */
@@ -59,16 +60,14 @@ body {
     color: transparent;
 }
 .text h3 {
-    font-size: 3vh;
+    font-size: 4vh;
     text-decoration: none;
     color: var(--py_dark)
 }
 
-
-
 @media (orientation: portrait) {
 
-    
+   
     .container {
         position: relative;
     }
@@ -99,6 +98,6 @@ body {
         align-items: center;
         width: 80vw;
         height: auto;
-        margin-top: 80vh;
+        margin-top: 175vh;
     }
 }
