@@ -50,7 +50,7 @@ body {
 .roadmap a {
     
     text-decoration: none;
-    background: linear-gradient(to right, #ff00ff, #0080ff);
+    background: linear-gradient(to right bottom, rgb(255, 225, 0), #0080ff);
     -webkit-background-clip: text; /* dla przeglądarek opartych na silniku WebKit */
     color: transparent;
 }
