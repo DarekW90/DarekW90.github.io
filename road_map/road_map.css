@@ -76,11 +76,12 @@ body {
 
     .logo_python {
         /* border: black solid 1px; */
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        position: relative;
+        
     }
 
     .logo_python img {
@@ -100,6 +101,7 @@ body {
         align-items: center;
         width: 80vw;
         height: auto;
-        margin-top: 175vh;
+        top: 100%;
+        transform: translateY(-50%);
     }
 }
