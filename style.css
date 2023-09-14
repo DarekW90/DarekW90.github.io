@@ -775,11 +775,11 @@ button:focus {
 
 
 /*--------------------*/
-/* CLIENT TESTIMONIALS */
+/*TUTORIALS */
 /*--------------------*/
 
 #mu-tutorials {
-	background-image: url("assets/images/testimonials-bg.jpg");
+	background-image: url("assets/images/tutorials-bg.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
