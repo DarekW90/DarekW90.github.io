@@ -778,8 +778,8 @@ button:focus {
 /* CLIENT TESTIMONIALS */
 /*--------------------*/
 
-#mu-testimonials {
-	background-image: url("assets/images/testimonials-bg.jpeg");
+#mu-tutorials {
+	background-image: url("assets/images/testimonials-bg.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -789,7 +789,7 @@ button:focus {
 	width: 100%;
 }
 
-#mu-testimonials::before {
+#mu-tutorials::before {
 	background: rgba(0,0,0,0.9);
 	bottom: 0;
 	content: '';
@@ -800,42 +800,42 @@ button:focus {
 	opacity: 0.84;
 }
 
-.mu-testimonials-area {
+.mu-tutorials-area {
 	display: inline;
 	float: left;
 	padding: 150px 0 210px;
 	width: 100%;
 }
 
-.mu-testimonial-header {
+.mu-tutorial-header {
 	display: inline;
 	float: left;
 	text-align: center;
 	width: 100%;
 }
 
-.mu-testimonials-area h2 {
+.mu-tutorials-area h2 {
 	color: #fff;
 	text-align: center;
 }
 
-.mu-testimonials-block {
+.mu-tutorials-block {
 	display: inline;
 	float: left;
 	margin-top: 60px;
 	width: 100%;
 }
 
-.mu-testimonial-slide li{
+.mu-tutorial-slide li{
 	list-style: none;
 	text-align: center;
 }
 
-.mu-testimonial-slide li.slick-slide {
+.mu-tutorial-slide li.slick-slide {
 	padding: 0 100px;
 }
 
-.mu-testimonial-slide li .mu-quote-icon {
+.mu-tutorial-slide li .mu-quote-icon {
 	color: #fff;
 	font-size: 16px;
 	border: 1px solid #fff;
@@ -846,7 +846,7 @@ button:focus {
 	line-height: 40px;
 }
 
-.mu-testimonial-slide li p{
+.mu-tutorial-slide li p{
 	color: #fff;
 	font-size: 16px;
 }
@@ -864,16 +864,16 @@ button:focus {
 	font-size: 14px;
 }
 
-.mu-testimonial-slide .slick-dots {
+.mu-tutorial-slide .slick-dots {
     bottom: -70px;
 }
 
-.mu-testimonial-slide .slick-dots li {
+.mu-tutorial-slide .slick-dots li {
 	height: 12px;
 	width: 12px;
 }
 
-.mu-testimonial-slide .slick-dots li button {
+.mu-tutorial-slide .slick-dots li button {
 	background-color: #fff;
 	border-radius: 50%;
 	height: 10px;
@@ -885,14 +885,14 @@ button:focus {
 
 }
 
-.mu-testimonial-slide .slick-dots li button:hover,
-.mu-testimonial-slide .slick-dots li button:focus,
-.mu-testimonial-slide .slick-dots li.slick-active button {
+.mu-tutorial-slide .slick-dots li button:hover,
+.mu-tutorial-slide .slick-dots li button:focus,
+.mu-tutorial-slide .slick-dots li.slick-active button {
 	height: 12px;
 	width: 12px;
 }
 
-.mu-testimonial-slide .slick-dots li button::before {
+.mu-tutorial-slide .slick-dots li button::before {
 	display: none;
 }
 
@@ -1191,7 +1191,7 @@ button:focus {
 		font-size: 16px;
 	}
 
-	.mu-testimonial-slide li.slick-slide,
+	.mu-tutorial-slide li.slick-slide,
 	.mu-contact-content {
 		padding: 0 50px;
 	}
@@ -1228,7 +1228,7 @@ button:focus {
 		float: left;
 	}
 
-	.mu-testimonial-slide li {
+	.mu-tutorial-slide li {
 		padding: 0 15px;
 	}
 
@@ -1400,7 +1400,7 @@ button:focus {
 		width: 100%;
 	}
 
-	.mu-testimonial-slide li.slick-slide, 
+	.mu-tutorial-slide li.slick-slide, 
 	.mu-contact-content {
 		padding: 0;
 	}

@@ -14,7 +14,7 @@
 	5. MOBILE MENU CLOSE  
 	6. PORTFOLIO GALLERY
 	7. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
-	8. CLIENT TESTIMONIALS ( SLICK SLIDER )
+	8. CLIENT TUTORIALS ( SLICK SLIDER )
 	9. BUTTON SMOOTH SCROLL ( VIEW MY WORK )
 	
 **/
@@ -190,10 +190,10 @@
 	});
 
 	/* ----------------------------------------------------------- */
-	/*  8. CLIENT TESTIMONIALS (SLICK SLIDER)
+	/*  8. CLIENT TUTORIALS (SLICK SLIDER)
 	/* ----------------------------------------------------------- */
 
-		$('.mu-testimonial-slide').slick({
+		$('.mu-tutorial-slide').slick({
 		  arrows: false,
 		  dots: true,
 		  infinite: true,
