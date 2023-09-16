@@ -578,6 +578,14 @@
                     knowledgeInfo.html('Skąd biorę wiedzę?');
                 }
 
+                var knowledgeAndLotsMore = $('#and-lots-more');
+                if (isChecked) {
+                    knowledgeAndLotsMore.html("And lots more...")
+					;
+                } else {
+                    knowledgeAndLotsMore.html('I wiele więcej...');
+                }
+
                 var getInTouchTitle = $('#get-in-touch-title');
                 if (isChecked) {
                     getInTouchTitle.html("Get in Touch")
