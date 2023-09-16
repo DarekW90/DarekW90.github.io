@@ -1122,6 +1122,69 @@ button:focus {
     color: white;
 }
 
+/*------------------------*/
+/* LANGUAGE CHANGE BUTTON */
+/*------------------------*/
+
+.lang-button {
+	margin-left: 15vw; 
+	margin-top: 10px;
+}
+
+.language-info {
+	margin-left: 14vw; 
+	margin-top: -7vh;
+}
+
+.check {
+	position: retive;
+	width: 50px;
+	cursor: pointer;
+}
+
+.check::before{
+	position: absolute;
+	content: '';
+	width: 70px;
+	height: 25px;
+	background-image: url('assets/images/UK_flag.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	border-radius: 25px;
+}
+
+.check:checked::before{
+	background-image: url('assets/images/PL_flag.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* .check::after{
+	content: '';
+	position: relative;
+	display: block;
+	left: 0px;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 25px;
+	transition: 0.25s;
+	border: 2px solid #333;
+	box-sizing: border-box;
+} */
+
+.check:checked::after{
+	left:50px;
+	/* border: 2px solid yellow; */
+}
+
+.check:checked ~ .text.textEN{
+	display: none;
+}
+
+.check:checked ~ .text.textPL{
+	display: block;
+}
 
 /*--------------------*/
 /* RESPONSIVE STYLE */

@@ -55,23 +55,40 @@
 		      </button>
 
 		      <!-- Text Logo -->
-		      <a class="navbar-brand" href="#">Darek</a> 
+		      <a class="navbar-brand" href="#">Darek</a>
+			
+				<div class="lang-button">
+					<label class="switch">
+						<input type=checkbox id="language-select" class="check" checked>
+					</label>
+					
+				</div>
+				
+				<!-- <div class="lang-button">
+					<span value="en">ENG</span>
+					<input type=checkbox id="language-select" class="check"> 
+					<span value="pl">POL</span>
+				</div> -->
+			  
 
 		      <!-- Image Logo 
 		      <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>-->
 
 
 		    </div>
-
+			
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
 		      	<ul class="nav navbar-nav mu-menu navbar-right">
-			        <li><a href="#">HOME</a></li>
-			        <li><a href="#mu-about">ABOUT ME</a></li>
-			        <li><a href="#mu-service">PROGRESS</a></li>
-		            <li><a href="#mu-portfolio">PORTFOLIO</a></li>
-		            <li><a href="#mu-tutorials">TUTORIALS</a></li>
-		            <li><a href="#mu-contact">CONTACT</a></li>
+			        <li><a href="#" id="menu-home">HOME</a></li>
+			        <li><a href="#mu-about" id="menu-about">ABOUT ME</a></li>
+			        <li><a href="#mu-service" id="menu-progress">PROGRESS</a></li>
+		            <li><a href="#mu-portfolio" id="menu-portfolio">PORTFOLIO</a></li>
+		            <li><a href="#mu-tutorials" id="menu-tutorials">TUTORIALS</a></li>
+		            <li><a href="#mu-contact" id="menu-contact">CONTACT</a></li>
+		            <li>
+					</li>
 		      	</ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -87,6 +104,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mu-featured-area">
+						<br>
 						<h1>Dariusz Walda</h1>
 
 						<!-- Start text slide -->
@@ -101,12 +119,12 @@
 							</div>
 							<span id="typed"></span>
 						</div>
+
 						<!-- Start text slide -->
-						
 						<div class="mu-featured-content">
-							<p>As a person freshly entering the world of programming and development, I am at the stage of acquiring as much knowledge as possible.<br><br>
+							<p id="start">As a person freshly entering the world of programming and development, I am at the stage of acquiring as much knowledge as possible.<br><br>
 								Every day I learn something new to expand my knowledge.</p>
-							<a href="#mu-portfolio" class="mu-primary-btn view-my-work-btn">CHECK MY WORK</a>
+							<a href="#mu-portfolio" class="mu-primary-btn view-my-work-btn" id="view-my-work-btn">CHECK MY WORK</a>
 						</div>
 
 					</div>
@@ -129,9 +147,9 @@
 						<div class="mu-about-area">
 
 							<div class="mu-about-header">
-								<h2 class="mu-heading-title">ABOUT ME</h2>
+								<h2 class="mu-heading-title"><p id="about-me">ABOUT ME</p></h2>
 								<span class="mu-header-dot"></span>
-								<p>
+								<p id="about-me-story">
 									My name is Darek. I am self-taught <strong>Python Backend</strong> and <strong>Web Developer</strong> also <strong>AI and Big Data Lover</strong>.
 									<br><br> As a third-semester extramural engineering student at WSB Merito University in Gdynia, my passion lies in Big Data, Data Engineering, AI, and backend development. 
 									<br><br>I aspire to cultivate and enhance my skills in these domains."
@@ -152,7 +170,7 @@
 											<!-- Start skills progress bar -->
 
 						                  	<div class="mu-skill-progress-bar">
-						                  		<h3>Skills</h3>
+						                  		<h3><p id='skill-progress'>Skills:</p></h3>
 							                    <span>Python</span>
 							                    <div class="mu-pro-bar mu-python-bar">
 							                    </div>
@@ -177,12 +195,12 @@
 							                    <span>Bootstrap / jQuery</span>
 							                    <div class="mu-pro-bar mu-bootstrap-bar">
 							                    </div>
-												<p style="color: gray;"><b>One day they all will be full.</b></p>
+												<p style="color: gray;" id="skill-promice"><b>One day they all will be full.</b></p>
 						                  	</div>
 
 						                  	<!-- Start Social Media -->
 						                  	<div class="mu-social-media">
-						                  		<h3>Social</h3>
+						                  		<h3><p id="social-media">Social</p></h3>
 						                  		<a href="https://www.facebook.com/darek.walda"><i class="fa fa-facebook"></i></a>
 						                  		<a href="https://www.linkedin.com/in/dariusz-walda/"><i class="fa fa-linkedin"></i></a>
 						                  		<a href="https://github.com/DarekW90/portfolio_repository"><i class="fa fa-github"></i></a>
@@ -191,8 +209,8 @@
 						                  	</div>
 
 						                  	<!-- Download Ressume Button -->
-						                  	<a href="https://drive.google.com/file/d/1vkQPutJcR1Y10kDfCb3UpmsP7xmg_giX/view?usp=drive_link" class="mu-resume-btn">Download My Resume (English version)</a>
-						                  	<a href="https://drive.google.com/file/d/117nDtfDwO9GkycHKoTuzzxjRMEvhfLQP/view?usp=drive_link" class="mu-resume-btn">Download My Resume (Polish version)</a>
+						                  	<a href="https://drive.google.com/file/d/1vkQPutJcR1Y10kDfCb3UpmsP7xmg_giX/view?usp=drive_link" class="mu-resume-btn"><p id="resume-english">Download My Resume (English version)</p></a>
+						                  	<a href="https://drive.google.com/file/d/117nDtfDwO9GkycHKoTuzzxjRMEvhfLQP/view?usp=drive_link" class="mu-resume-btn"><p id="resume-polish">Download My Resume (Polish version)</p></a>
 
 										</div>
 									</div>
@@ -215,10 +233,10 @@
 						<div class="mu-service-area">
 
 							<div class="mu-service-header">
-								<h2 class="mu-heading-title">MY PROGRESS</h2>
+								<h2 class="mu-heading-title"><p id="my-progress">MY PROGRESS</p></h2>
 								<span class="mu-header-dot"></span>
-								<p>
-									I would like to warmly welcome you to my website, where I describe my progress in learning programming. This is a place where I want to share my passion for Python - a programming language that always amazes me with its countless possibilities. What is always fascinating is that in the world of Python I always find something new to learn.<br>Each discovery inspires me to expand my skills and explore new areas. <br><br>Further down the page, I would like to tell you about my path in programming. I started from scratch, and now, with hindsight, I can proudly share my progress with you.
+								<p id="my-progress-info">
+									I would like to warmly welcome you to my website, where I describe my progress in learning programming. This is a place where I want to share my passion for Python - a programming language that always amazes me with its countless possibilities. What's always fascinating to me is that in the world of Python I always find something new to learn.<br>Each discovery inspires me to expand my skills and explore new areas. <br><br>In the rest of the page I would like to tell you about my path in programming. I started from scratch and now, with hindsight, I can proudly share my progress with you.
 								</p>
 							</div>
 
@@ -233,7 +251,7 @@
 												<i class="fa-brands fa-python fa-xl"></i>
 											</span>
 											<h4>Python</h4>
-											<p>One thought, I know for sure. I still only know a small percentage of Python's total capabilities. Still learning new features.</p>
+											<p id="service-python">One thought, I know for sure. I still only know a small percentage of Python's total capabilities. Still learning new features.</p>
 										</div>
 									</div>
 									<!-- / Service Single Content -->
@@ -244,8 +262,8 @@
 											<span class="mu-service-icon-box">
 												<i class="fa fa-desktop"></i>
 											</span>
-											<h4>Web Development</h4>
-											<p>As a beginner Flask was my first shoot in web dev, I know a bit of Django also I dont have any problem to find myself in Front End.</p>
+											<h4 id="service-web-development-title">Web Development</h4>
+											<p id="service-web-development">As a beginner, Flask was my first shoot in web dev, I know a bit of Django also I dont have any problem to find myself in Front End.</p>
 										</div>
 									</div>
 									<!-- / Service Single Content -->
@@ -256,8 +274,8 @@
 											<span class="mu-service-icon-box">
 												<i class="fa-solid fa-database"></i>
 											</span>
-											<h4>Database</h4>
-											<p>I'm still expanding my knowledge of the use of SQL. I know how to create database queries and I know tools such as MySQL / SQLite.</p>
+											<h4 id="service-web-database-title">Database</h4>
+											<p id="service-web-database">I'm still expanding my knowledge of the use of SQL. I know how to create database queries and I know tools such as MySQL / SQLite.</p>
 										</div>
 									</div>
 									<!-- / Service Single Content -->
@@ -268,8 +286,8 @@
 											<span class="mu-service-icon-box">
 												<i class="fa-solid fa-code"></i>
 											</span>
-											<h4>Other languages</h4>
-											<p>Even though Python is my favorite, I don't see a problem with C#, PHP and Java. And I also know a little bit of R.</p>
+											<h4 id="service-web-other-languages-title">Other languages</h4>
+											<p id="service-web-other-languages">Even though Python is my favorite, I don't see a problem with C#, PHP and Java. And I also know a little bit of R.</p>
 										</div>
 									</div>
 									<!-- / Service Single Content -->
@@ -280,8 +298,8 @@
 											<span class="mu-service-icon-box">
 												<i class="fa fa-line-chart"></i>
 											</span>
-											<h4>Data Manipulation</h4>
-											<p>Filtering, sorting, combining, text processing, format unification and other cool features that Python provides with libraries.</p>
+											<h4 id="service-data-manipulation-title">Data Manipulation</h4>
+											<p id="service-data-manipulation">Filtering, sorting, combining, text processing, format unification and other cool features that Python provides with libraries.</p>
 										</div>
 												
 									</div>
@@ -293,7 +311,7 @@
 											<span class="mu-service-icon-box">
 												<i class="fa-solid fa-microchip"></i>
 											</span>
-											<h4>Artificial intelligence</h4>
+											<h4 id="service-ai-title">Artificial intelligence</h4>
 											<p>I leave it for later, at this point I know how it works and what to pay attention to, I know the basics of the TensorFlow and PyTorch libraries</p>
 										</div>
 									</div>
@@ -318,20 +336,20 @@
 						<div class="mu-portfolio-area">
 
 							<div class="mu-portfolio-header">
-								<h2 class="mu-heading-title">MY PORTFOLIO</h2>
+								<h2 class="mu-heading-title" id="portfolio-description-title">MY PORTFOLIO</h2>
 								<span class="mu-header-dot"></span>
 							</div>
 
 							<!-- Start Portfolio Filter -->
 							<div class="mu-portfolio-filter-area">
 								<ul class="mu-simplefilter">
-					                <li class="active" data-filter="all"><u>All</u></li>
-					                <li data-filter="1"><u>Web App</u></li>
-					                <li data-filter="2"><u>Analytics</u></li>
-					                <li data-filter="3"><u>Games</u></li>
-					                <li data-filter="4"><u>Apps</u></li>
-					                <li data-filter="5"><u>AI</u></li>
-					                <li data-filter="6"><u>Blog</u></li>
+					                <li class="active" data-filter="all" ><u><p id="portfolio-description-all">All</p></u></li>
+					                <li data-filter="1"><u><p id="portfolio-description-web-app">Web App</p></u></li>
+					                <li data-filter="2"><u><p id="portfolio-description-analytic">Analytics</p></u></li>
+					                <li data-filter="3"><u><p id="portfolio-description-games">Games</p></u></li>
+					                <li data-filter="4"><u><p id="portfolio-description-apps">Apps</p></u></li>
+					                <li data-filter="5"><u><p id="portfolio-description-ai">AI</p></u></li>
+					                <li data-filter="6"><u><p id="portfolio-description-blog">Blog</p></u></li>
 					            </ul>
 							</div>
 
@@ -456,7 +474,7 @@
 					<div class="col-md-12">
 						<div class="mu-tutorials-area">
 							<div class="mu-tutorial-header">
-								<h2 class="mu-heading-title">Where do I get my knowledge?</h2>
+								<h2 class="mu-heading-title" id="knowledge-info">Where do I get my knowledge?</h2>
 								<span class="mu-header-dot"></span>
 							</div>
 
@@ -508,8 +526,7 @@
 									<li>
 										<i class="fa fa-quote-right mu-quote-icon"></i>
 										<p style="font-size: 35px;">And lots more...</p>
-										<!-- <h5 class="mu-ct-name"></h5>
-										<a class="mu-ct-title" href="https://www.freecodecamp.org/">www.freecodecamp.org</a> -->
+										
 									</li>
 
 								</ul>
@@ -531,9 +548,9 @@
 						<div class="mu-contact-area">
 
 							<div class="mu-contact-header">
-								<h2 class="mu-heading-title">Get in Touch</h2>
+								<h2 class="mu-heading-title" id="get-in-touch-title">Get in Touch</h2>
 								<span class="mu-header-dot"></span>
-								<p>I'm actively seeking opportunities to advance my career and connect with industry professionals. As a newcomer, my focus is on gaining experience and learning from experts in the field. If you're open to sharing your insights or have potential employment prospects, I'd be thrilled to hear from you. I'm receptive to any suggestions and proposals.</p>
+								<p id="get-in-touch">I'm actively seeking opportunities to advance my career and connect with industry professionals. As a newcomer, my focus is on gaining experience and learning from experts in the field. If you're open to sharing your insights or have potential employment prospects, I'd be thrilled to hear from you. I'm receptive to any suggestions and proposals.</p>
 							</div>
 
 							<!-- Start Contact Content -->
@@ -547,7 +564,7 @@
 												<div class="col-sm-4">
 													<div class="mu-contact-top-single">
 														<div class="mu-icon"><i class="fa fa-map-marker"></i></div>
-														<p>Pomeranian<br>Tricity<br>Poland</p>
+														<p id="get-in-touch-address">Pomeranian<br>Tricity<br>Poland</p>
 													</div>
 												</div>
 												<div class="col-sm-4">
@@ -605,9 +622,11 @@
 	<footer id="mu-footer" role="contentinfo">
 			<div class="container">
 				<div class="mu-footer-area">
-					<p class="mu-copy-right">&copy;<button id="openBtn"><b><u>Copyright</u></b></button>
-						All right reserved.<br>
-						Special thanks to:<button id="openBtn2"><b><u>Credits</u></b></button></p>
+					<p class="mu-copy-right">&copy;
+						<button id="openBtn"><b><u>
+						<p id="credits-info-1">Copyright</p></u></b></button> <span id="credits-info-2">All right reserved.</span><br>
+						<span id="credits-info-3">Special thanks to:</span><button id="openBtn2"><b><u>
+						<p id="credits-info-4">Credits</p></u></b></button></p>
 				</div>
 				
 				<div class="popup" id="popup">
