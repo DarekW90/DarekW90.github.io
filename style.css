@@ -406,7 +406,7 @@ button:focus {
 
 
 /*--------------------*/
-/* ABOUT US */
+/* ABOUT ME */
 /*--------------------*/
 
 
@@ -1089,6 +1089,15 @@ button:focus {
 	transition: all 0.5s;
 }
 
+#openBtn {
+	padding: 0;
+    height: 0px;
+}
+#openBtn2 {
+	padding: 0;
+    height: 0px;
+}
+
 /*--------------------*/
 /* popup */
 /*--------------------*/
@@ -1157,20 +1166,6 @@ button:focus {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
-/* .check::after{
-	content: '';
-	position: relative;
-	display: block;
-	left: 0px;
-	width: 25px;
-	height: 25px;
-	background: #fff;
-	border-radius: 25px;
-	transition: 0.25s;
-	border: 2px solid #333;
-	box-sizing: border-box;
-} */
 
 .check:checked::after{
 	left:50px;
